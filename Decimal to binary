@@ -1,0 +1,20 @@
+def convert_to_binary():
+    try:
+        # This allows you to type any number when the code runs
+        user_input = input("Enter a decimal number: ")
+        
+        # Convert the string input to an integer
+        number = int(user_input)
+        
+        # Use Python's built-in conversion
+        # [2:] removes the '0b' prefix from the string
+        binary_result = bin(number)[2:]
+        
+        print(f"Decimal: {number}")
+        print(f"Binary:  {binary_result}")
+        
+    except ValueError:
+        print("Please enter a valid whole number (no letters or decimals).")
+
+# Run the function
+convert_to_binary()
