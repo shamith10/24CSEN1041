@@ -1,0 +1,64 @@
+Problem Statement:
+Write a Python program to print numbers from 1 to 10 using a for loop with the following conditions:
+Use the pass statement when the number is 4.
+Skip printing the number 6 using the continue statement.
+Stop the loop when the number reaches 9 using the break statement.
+
+CODE:
+for i in range(1, 11):
+    if i == 4:
+        pass          # no operation
+    elif i == 6:
+        continue      # skip 6
+    elif i == 9:
+        break         # exit loop
+
+    print(i)
+
+OUTPUT:
+1
+2
+3
+4
+5
+7
+8
+
+OBSERVATION:
+pass does nothing, so the number 4 is printed.
+continue skips only the current iteration, so 6 is not printed.
+break stops the loop when 9 is reached.
+Loop execution ends immediately after break.
+
+
+Problem Statement:
+Write a Python program using a while loop to display numbers from 1 to 7 and demonstrate the use of pass, continue, and break:
+Use pass when the value is 2.
+Skip printing 5 using continue.
+Terminate the loop when the value becomes 6 using break.
+
+CODE:
+i = 1
+while i <= 7:
+    if i == 2:
+        pass          # placeholder
+    elif i == 5:
+        i += 1
+        continue      # skip 5
+    elif i == 6:
+        break         # stop loop
+
+    print(i)
+    i += 1
+
+OUTPUT:
+1
+2
+3
+4
+
+Observation:
+pass has no effect on execution flow.
+continue skips printing 5, but the loop continues.
+break terminates the loop when 6 is encountered.
+In a while loop, updating the loop variable is necessary to avoid infinite loops.
