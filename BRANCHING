@@ -1,6 +1,6 @@
 BRANCHING:
 
-Problem Statement:
+QUESTION:
 Write a Python program that prints numbers from 1 to 10 using a for loop with the following conditions:
 Skip printing the number 3 using the continue statement.
 Stop the loop completely when the number reaches 8 using the break statement.
@@ -31,7 +31,7 @@ Loop runs only until the break condition is met.
 
 
 
-Problem Statement:
+QUESTION:
 
 Write a Python program to iterate through numbers from 1 to 5 using a for loop and demonstrate the use of pass, continue, and break statements with the following conditions:
 When the value is 2, use the pass statement (no action is performed).
