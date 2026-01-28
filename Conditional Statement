@@ -1,0 +1,63 @@
+QUESTION:
+Write a Python program to read marks of a student and display the grade based on the following conditions using if–elif–else:
+Marks ≥ 90 → Grade A
+Marks ≥ 75 and < 90 → Grade B
+Marks ≥ 60 and < 75 → Grade C
+Marks ≥ 40 and < 60 → Grade D
+Marks < 40 → Fail
+Also check if the entered marks are valid (0–100).
+
+CODE:
+marks = int(input("Enter marks: "))
+
+if marks < 0 or marks > 100:
+    print("Invalid marks")
+elif marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 60:
+    print("Grade C")
+elif marks >= 40:
+    print("Grade D")
+else:
+    print("Fail")
+
+OUTPUT:
+Enter marks: 69
+Grade C 
+
+OBSERVATION:
+The program correctly assigns grades based on marks using if–elif–else.
+Invalid marks (<0 or >100) are handled.
+Each marks range is exclusive, so only one grade is printed.
+Top-to-bottom checking ensures the first matching condition is executed.
+
+QUESTION:
+Write a Python program to calculate the electricity bill based on the following conditions:
+First 100 units → ₹1 per unit
+Next 100 units → ₹2 per unit
+Above 200 units → ₹3 per unit
+Display the total bill amount.
+
+CODE:
+units = int(input("Enter total units consumed: "))
+
+if units <= 100:
+    bill = units * 1
+elif units <= 200:
+    bill = 100 * 1 + (units - 100) * 2
+else:
+    bill = 100 * 1 + 100 * 2 + (units - 200) * 3
+
+print("Total Electricity Bill = ₹", bill)
+
+OUTPUT:
+Enter total units consumed: 169
+Total Electricity Bill = ₹ 238
+
+OBSERVATION:
+The program calculates the bill based on unit ranges using if–elif–else.
+First 100 units are charged at ₹1/unit, next 100 at ₹2/unit, and above 200 at ₹3/unit.
+Only the matching range is executed, making calculation accurate and efficient.
+Works correctly for edge cases like 100, 200, or more units.
