@@ -1,4 +1,4 @@
-Problem Statement:
+QUESTION:
 Write a Python program to print numbers from 1 to 10 using a for loop with the following conditions:
 Use the pass statement when the number is 4.
 Skip printing the number 6 using the continue statement.
@@ -31,7 +31,7 @@ break stops the loop when 9 is reached.
 Loop execution ends immediately after break.
 
 
-Problem Statement:
+QUESTION:
 Write a Python program using a while loop to display numbers from 1 to 7 and demonstrate the use of pass, continue, and break:
 Use pass when the value is 2.
 Skip printing 5 using continue.
