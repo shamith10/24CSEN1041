@@ -1,0 +1,66 @@
+BRANCHING:
+
+Problem Statement:
+Write a Python program that prints numbers from 1 to 10 using a for loop with the following conditions:
+Skip printing the number 3 using the continue statement.
+Stop the loop completely when the number reaches 8 using the break statement.
+Print all other numbers that satisfy the above conditions.
+
+CODE:
+for i in range(1, 11):
+    if i == 3:
+        continue   # skip 3
+
+    if i == 8:
+        break      # stop loop at 8
+
+    print(i)
+OUTPUT:
+1
+2
+4
+5
+6
+7
+
+OBSERVATION:
+continue skips the current iteration when i == 3, so 3 is not printed.
+break terminates the loop completely when i == 8.
+Statements after break are never executed.
+Loop runs only until the break condition is met.
+
+
+
+Problem Statement:
+
+Write a Python program to iterate through numbers from 1 to 5 using a for loop and demonstrate the use of pass, continue, and break statements with the following conditions:
+When the value is 2, use the pass statement (no action is performed).
+When the value is 4, skip the current iteration using the continue statement.
+When the value is 5, terminate the loop using the break statement.
+Print all numbers that are processed before the loop terminates.
+
+CODE:
+
+for i in range(1, 6):
+    if i == 2:
+        pass      # does nothing, placeholder
+
+    elif i == 4:
+        continue  # skip 4
+
+    elif i == 5:
+        break     # stop loop
+
+    print(i)
+
+OUTPUT:
+1
+2
+3
+
+OBSERVATION:
+pass does nothing; it just allows the program to continue normally.
+Even though i == 2 has pass, 2 is still printed.
+continue skips printing 4.
+break stops the loop when i == 5, so 5 is not printed.
+pass is mainly used as a placeholder where code is required syntactically.
