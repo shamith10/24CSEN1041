@@ -1,0 +1,39 @@
+CODE:
+# Arithmetic operators
+a = 10
+b = 3
+print(a + b)   # addition
+print(a - b)   # subtraction
+print(a * b)   # multiplication
+print(a / b)   # division
+print(a % b)   # modulus
+
+# Comparison operators
+print(a > b)
+print(a == b)
+
+# Logical operators
+print(a > 5 and b < 5)
+print(a > 5 or b > 5)
+print(not(a < b))
+
+OUTPUT:
+13
+7
+30
+3.3333333333333335
+1
+True
+False
+True
+True
+True
+
+
+OBSERVATION:
+Arithmetic operators do calculations
+Comparison operators give True/False
+Logical operators combine conditions
+/ gives decimal result
+% gives remainder
+Operators control program logic
