@@ -1,0 +1,13 @@
+CODE:
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+OUTPUT:
+Enter your age :21
+Eligible to vote
+
+OBSERVATION:
+relation and logical condition are used to make real life decisions in programs
