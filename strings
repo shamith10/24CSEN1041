@@ -1,0 +1,25 @@
+sentence = "python is easy and python is powerful"
+
+words = sentence.lower().split()
+frequency = {}
+
+for word in words:
+    if word in frequency:
+        frequency[word] += 1
+    else:
+        frequency[word] = 1
+
+print("Sentence:", sentence)
+print("Word Frequency:")
+
+for word, count in frequency.items():
+    print(word, ":", count)
+
+#output
+Sentence: python is easy and python is powerful
+Word Frequency:
+python : 2
+is : 2
+easy : 1
+and : 1
+powerful : 1
