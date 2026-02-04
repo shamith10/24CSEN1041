@@ -1,0 +1,17 @@
+email = "student@gmail.com"
+
+if "@" in email and "." in email:
+    at_pos = email.find("@")
+    dot_pos = email.rfind(".")
+
+    if at_pos < dot_pos:
+        print("Email:", email)
+        print("Valid Email ID")
+    else:
+        print("Invalid Email ID")
+else:
+    print("Invalid Email ID")
+
+#output
+Email: student@gmail.com
+Valid Email ID
