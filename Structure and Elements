@@ -1,0 +1,25 @@
+# Program Name: Simple Calculator
+# Author: Student
+# Description: This program performs basic arithmetic operations
+
+# Variable declaration and initialization
+num1 = 15
+num2 = 5
+
+# Arithmetic operations
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2
+
+# Displaying results
+print("Addition =", addition)
+print("Subtraction =", subtraction)
+print("Multiplication =", multiplication)
+print("Division =", division)
+
+#Output
+Addition = 20
+Subtraction = 10
+Multiplication = 75
+Division = 3.0
