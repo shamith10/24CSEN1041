@@ -1,25 +1,16 @@
-# Program Name: Simple Calculator
-# Author: Student
-# Description: This program performs basic arithmetic operations
+# Program to calculate average marks
 
-# Variable declaration and initialization
-num1 = 15
-num2 = 5
+def average(marks):
+    total = sum(marks)
+    count = len(marks)
+    return total / count
 
-# Arithmetic operations
-addition = num1 + num2
-subtraction = num1 - num2
-multiplication = num1 * num2
-division = num1 / num2
+marks = [80, 75, 90, 85]
+avg = average(marks)
 
-# Displaying results
-print("Addition =", addition)
-print("Subtraction =", subtraction)
-print("Multiplication =", multiplication)
-print("Division =", division)
+print("Marks:", marks)
+print("Average:", avg)
 
 #Output
-Addition = 20
-Subtraction = 10
-Multiplication = 75
-Division = 3.0
+Marks: [80, 75, 90, 85]
+Average: 82.5
