@@ -1,0 +1,9 @@
+x = 100          # integer literal
+y = 10.5         # float literal
+z = 3 + 4j       # complex literal
+flag = False     # boolean literal
+
+print(x, y, z, flag)
+
+#Output
+100 10.5 (3+4j) False
